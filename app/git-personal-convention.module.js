@@ -1,1 +1,1 @@
-angular.module("GITPersonalConvention", ["ngMaterial", "ui.router", "HomeModule"]);
+angular.module("GITPersonalConvention", ["ngMaterial", "ui.router", "HomeModule", "GITConventionModule"]);

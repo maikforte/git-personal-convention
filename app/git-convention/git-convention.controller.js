@@ -1,5 +1,3 @@
 angular.module("GITConventionModule")
 
-    .controller("GITConventionController", function ($scope)) {
-
-    });
+    .controller("GITConventionController", function ($scope) {});

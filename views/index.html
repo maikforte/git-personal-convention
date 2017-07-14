@@ -9,15 +9,12 @@
     <link rel="stylesheet" href="./node_modules/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet" href="./asset/css/generic-layout.css">
+    <link rel="stylesheet" href="./asset/css/mf-style.css">
 </head>
 
 <body ng-app="GITPersonalConvention">
-    <md-content flex layout="column">
-        <div layout="column">
-            <ui-view style="width: 1000px;
-                                margin-left: auto;
-                                margin-right: auto;"></ui-view>
-        </div>
+    <md-content flex>
+        <ui-view layout="column" layout-padding></ui-view>
     </md-content>
 </body>
 
@@ -30,7 +27,11 @@
 <script src="./node_modules/angular-material/angular-material.min.js"></script>
 <script src="./app/home/home.module.js"></script>
 <script src="./app/home/home.controller.js"></script>
+<script src="./app/git-convention/git-convention.module.js"></script>
+<script src="./app/git-convention/git-convention.controller.js"></script>
+<script src="./app/git-convention/git-convention.directive.js"></script>
 <script src="./app/git-personal-convention.module.js"></script>
+<script src="./app/git-personal-convention.directive.js"></script>
 <script src="./app/git-personal-convention.router.js"></script>
 <script src="./app/git-personal-convention.theme.js"></script>
 

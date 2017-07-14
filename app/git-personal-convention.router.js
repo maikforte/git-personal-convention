@@ -12,14 +12,15 @@ angular.module("GITPersonalConvention")
             "templateUrl": "./views/home.html",
             "controller": "HomeController"
         };
-    
+
         var gitConventionState = {
-            "name": "gitConvention",
+            "name": "git-convention",
             "url": "/git-convention",
             "templateUrl": "./views/git-convention.html",
-            "controller": "HomeController"
+            "controller": "GITConventionController"
         };
 
-        $urlRouterProvider.otherwise("/home");
+        $urlRouterProvider.otherwise("/git-convention");
         $stateProvider.state(homeState);
+        $stateProvider.state(gitConventionState);
     });
