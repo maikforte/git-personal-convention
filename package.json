@@ -1,38 +1,39 @@
 {
-  "name": "git-personal-convention",
-  "version": "1.0.0",
-  "description": "Maik's personal GIT convention",
-  "main": "index.js",
-  "scripts": {
-    "test": "karma start karma.conf.js",
-    "start": "node git-personal-convention.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maikforte/git-personal-convention.git"
-  },
-  "author": "Michael 'Maik' Ardan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maikforte/git-personal-convention/issues"
-  },
-  "homepage": "https://github.com/maikforte/git-personal-convention#readme",
-  "dependencies": {
-    "angular": "^1.6.4",
-    "angular-animate": "^1.6.4",
-    "angular-aria": "^1.6.4",
-    "angular-material": "^1.1.4",
-    "angular-messages": "^1.6.4",
-    "angular-sanitize": "^1.6.4",
-    "angular-ui-router": "^1.0.3",
-    "express": "^4.15.3",
-    "jasmine-core": "^2.6.4"
-  },
-  "devDependencies": {
-    "angular-mocks": "^1.6.4",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.1.1",
-    "karma-firefox-launcher": "^1.0.1",
-    "karma-jasmine": "^1.1.0"
-  }
+    "name": "git-personal-convention",
+    "version": "1.0.0",
+    "description": "Maik's personal GIT convention",
+    "main": "index.js",
+    "scripts": {
+        "test": "karma start karma.conf.js",
+        "start": "node git-personal-convention.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/maikforte/git-personal-convention.git"
+    },
+    "author": "Michael 'Maik' Ardan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/maikforte/git-personal-convention/issues"
+    },
+    "homepage": "https://github.com/maikforte/git-personal-convention#readme",
+    "dependencies": {
+        "angular": "^1.6.4",
+        "angular-animate": "^1.6.4",
+        "angular-aria": "^1.6.4",
+        "angular-material": "^1.1.4",
+        "angular-messages": "^1.6.4",
+        "angular-sanitize": "^1.6.4",
+        "angular-ui-router": "^1.0.3",
+        "express": "^4.15.3",
+        "jasmine-core": "^2.6.4",
+        "material-design-icons": "^3.0.1"
+    },
+    "devDependencies": {
+        "angular-mocks": "^1.6.4",
+        "karma": "^1.7.0",
+        "karma-chrome-launcher": "^2.1.1",
+        "karma-firefox-launcher": "^1.0.1",
+        "karma-jasmine": "^1.1.0"
+    }
 }

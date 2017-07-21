@@ -2,5 +2,7 @@ angular.module("GITPersonalConvention")
 
     .config(function ($mdThemingProvider) {
         $mdThemingProvider.theme("default")
-            .primaryPalette("orange");
+            .primaryPalette("light-blue")
+            .accentPalette("green")
+            .warnPalette("red");
     });
