@@ -29,4 +29,34 @@ angular.module("GITPersonalConvention")
             "controller": "ToolbarController",
             "templateUrl": "./views/template/header.tmpl.html"
         }
+    })
+
+    .directive("mfLeftImageAlign", function () {
+        return {
+            "scope": {
+                "image": "@",
+                "width": "@",
+                "height": "@",
+                "align": "@",
+                "text-class": "@"
+            },
+            "transclude": true,
+            "restrict": "EA",
+            "templateUrl": "./views/template/left-image-align.tmpl.html"
+        }
+    })
+
+    .directive("mfRightImageAlign", function () {
+        return {
+            "scope": {
+                "image": "@",
+                "width": "@",
+                "height": "@",
+                "align": "@",
+                "text-class": "@"
+            },
+            "transclude": true,
+            "restrict": "EA",
+            "templateUrl": "./views/template/right-image-align.tmpl.html"
+        }
     });

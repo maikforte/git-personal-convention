@@ -14,11 +14,12 @@
 </head>
 
 <body ng-app="GITPersonalConvention">
-
-    <mf-header></mf-header>
-    <mf-sidenav></mf-sidenav>
-    <md-content>
-        <ui-view layout="column" flex></ui-view>
+    <md-content layout="column">
+        <mf-header></mf-header>
+        <mf-sidenav></mf-sidenav>
+        <md-content>
+            <ui-view layout="column" flex></ui-view>
+        </md-content>
     </md-content>
 </body>
 
@@ -33,7 +34,6 @@
 <script src="./app/home/home.controller.js"></script>
 <script src="./app/git-convention/git-convention.module.js"></script>
 <script src="./app/git-convention/git-convention.controller.js"></script>
-<script src="./app/git-convention/git-convention.directive.js"></script>
 <script src="./app/git-personal-convention.module.js"></script>
 <script src="./app/git-personal-convention.controller.js"></script>
 <script src="./app/git-personal-convention.directive.js"></script>
