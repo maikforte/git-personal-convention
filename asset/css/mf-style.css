@@ -73,3 +73,17 @@
 .mf-header-tools {
     background-color: #eeeeee;
 }
+
+.mf-sidenav-subheader {
+    cursor: pointer;
+    outline: none;
+}
+
+.mf-sidenav-tool {
+    cursor: pointer;
+    outline: none;
+}
+
+.mf-sidenav-tool:hover {
+    background-color: #dddddd;
+}

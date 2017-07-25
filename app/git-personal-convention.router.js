@@ -20,15 +20,7 @@ angular.module("GITPersonalConvention")
             "controller": "GITConventionController"
         };
 
-        var testState = {
-            "name": "test",
-            "url": "/test",
-            "templateUrl": "./views/test.html"
-        };
-
-
-        $urlRouterProvider.otherwise("/test");
+        $urlRouterProvider.otherwise("/home");
         $stateProvider.state(homeState);
         $stateProvider.state(gitConventionState);
-        $stateProvider.state(testState);
     });

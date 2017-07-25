@@ -9,10 +9,28 @@
             </div>
         </div>
         <md-divider></md-divider>
-        <div layout="column" flex layout-padding>
-            <mf-sidenav-anchor link="home" ng-click="toggleSidenav()">Professional Profile</mf-sidenav-anchor>
+        <div layout="column" flex>
+            <div ng-init="isProfileShown=true">
+                <div ng-click="isProfileShown=!isProfileShown" layout="row" layout-align="none center" layout-padding class="mf-sidenav-subheader">
+                    Profile<span flex></span><i class="material-icons" ng-if="isProfileShown">arrow_drop_down</i><i class="material-icons" ng-if="!isProfileShown">arrow_drop_up</i>
+                </div>
+                <div ng-if="isProfileShown">
+                    <md-divider></md-divider>
+                    <mf-sidenav-anchor link="home" ng-click="toggleSidenav()">Professional Profile</mf-sidenav-anchor>
+                </div>
+                <md-divider></md-divider>
+            </div>
 
-            <mf-sidenav-anchor link=" git-convention " ng-click="toggleSidenav() ">GIT Branching Model</mf-sidenav-anchor>
+            <div ng-init="isConventionShown=true">
+                <div ng-click="isConventionShown=!isConventionShown" layout="row" layout-align="none center" layout-padding class="mf-sidenav-subheader">
+                    Convention<span flex></span><i class="material-icons" ng-if="isConventionShown">arrow_drop_down</i><i class="material-icons" ng-if="!isConventionShown">arrow_drop_up</i>
+                </div>
+                <div ng-if="isConventionShown">
+                    <md-divider></md-divider>
+                    <mf-sidenav-anchor link="git-convention" ng-click="toggleSidenav() ">GIT Branching Model</mf-sidenav-anchor>
+                </div>
+                <md-divider></md-divider>
+            </div>
         </div>
     </md-content>
 </md-sidenav>
