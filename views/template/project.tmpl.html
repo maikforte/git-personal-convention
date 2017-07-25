@@ -1,0 +1,15 @@
+<div layout="row" layout-padding>
+    <div>
+        <img ng-src="{{image}}" width="200">
+    </div>
+    <div flex class="mf-text-left">
+        <b>{{title}}</b> ({{type}} - {{status}})<br>
+        <span class="md-body-1">
+            <ng-transclude></ng-transclude>
+            <br>
+            <div layout="row" layout-align="start center">
+                <i class="material-icons" flex="10">link</i><a target="_blank" href="{{repository}}">GitHub</a>
+            </div>
+        </span>
+    </div>
+</div>

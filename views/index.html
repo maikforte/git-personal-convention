@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="./asset/css/mf-style.css">
 </head>
 
-<body ng-app="GITPersonalConvention">
+<body ng-app="GITPersonalConvention" layout="column">
     <md-content layout="column">
-        <mf-header></mf-header>
         <mf-sidenav></mf-sidenav>
-        <md-content>
+        <mf-header></mf-header>
+        <md-content flex>
             <ui-view layout="column" flex></ui-view>
         </md-content>
     </md-content>

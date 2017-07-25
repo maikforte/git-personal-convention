@@ -24,10 +24,36 @@ angular.module("GITPersonalConvention")
         }
     })
 
+    .directive("mfSidenavAnchor", function () {
+        return {
+            "scope": {
+                "link": "@"
+            },
+            "transclude": true,
+            "restrict": "EA",
+            "templateUrl": "./views/template/sidenav-anchor.tmpl.html"
+        }
+    })
+
     .directive("mfHeader", function () {
         return {
             "controller": "ToolbarController",
             "templateUrl": "./views/template/header.tmpl.html"
+        }
+    })
+
+    .directive("mfProject", function () {
+        return {
+            "scope": {
+                "image": "@",
+                "repository": "@",
+                "title": "@",
+                "type": "@",
+                "status": "@"
+            },
+            "transclude": true,
+            "restrict": "EA",
+            "templateUrl": "./views/template/project.tmpl.html"
         }
     })
 

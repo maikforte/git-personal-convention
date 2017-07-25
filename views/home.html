@@ -4,7 +4,6 @@
 </div>
 
 <div layout="row" layout-margin class="content-padding">
-    <!--    <img ng-src="asset/img/avatar.png">-->
     <div flex="65">
         <div md-whiteframe="4">
             <div layout-padding class="mf-header-tools">
@@ -33,19 +32,21 @@
             </div>
             <md-divider></md-divider>
             <div layout-padding layout-wrap>
-                <div layout="row" layout-padding>
-                    <div>
-                        <img ng-src="asset/img/msl.png" width="200">
-                    </div>
-                    <div flex class="mf-text-left">
-                        <b>MSL Stats Calculator</b> (Ongoing)<br>
-                        <span class="md-body-1">An AngularJS project that calculates the Monster Statistics based on the inputted Gems. The project implements AngularJS and Angular Material as front-end and components backing the application with ExpressJS and is served in NodeJS server via Heroku.<br>
-                        <div layout="row" layout-align="start center">
-                            <i class="material-icons" flex="10">link</i><a target="_blank" href="https://github.com/maikforte/msl-stat-calculator">GitHub</a>
-                        </div>
-                        </span>
-                    </div>
-                </div>
+                <mf-project title="MSL Stats Calculator" image="asset/img/msl.png" status="Ongoing" type="Personal" repository="https://github.com/maikforte/msl-stat-calculator">
+                    An AngularJS project that calculates the Monster Statistics based on the inputted Gems. The project implements <i>AngularJS</i> and <i>Angular Material</i> as front-end and components while backing the application with <i>ExpressJS</i> and is served in <i>NodeJS</i> server via <i>Heroku</i>.
+                </mf-project>
+
+                <mf-spacer-xs></mf-spacer-xs>
+
+                <mf-project title="Task Scheduler" image="asset/img/sched.png" status="Ongoing" type="Personal" repository="https://github.com/maikforte/mf-scheduler">
+                    An AngularJS project that gives the end-user the freedom to schedule their weekly task. It could be an itinerary, event, or daily schedule. The project also implements <i>AngularJS</i> and <i>Angular Material</i> as front-end and components while backing the application with <i>ExpressJS</i> and is served in <i>NodeJS</i> server via <i>Heroku</i>.
+                </mf-project>
+
+                <mf-spacer-xs></mf-spacer-xs>
+
+                <mf-project title="DevBoy Adventure" image="asset/img/dev-boy.png" status="Ongoing" type="Personal" repository="https://github.com/maikforte/devboy-adventures">
+                    A comic blog about DevBoy's adventure as a web developer. Created with <i>AngularJS</i> and <i>Angular Material</i> with <i>ExpressJS</i> as back-end and also serves as the middleware to fetch the comics from <i>AWS S3</i>. The project is served in <i>Heroku</i>.
+                </mf-project>
             </div>
         </div>
     </div>
@@ -94,5 +95,4 @@
             </div>
         </div>
     </div>
-
 </div>

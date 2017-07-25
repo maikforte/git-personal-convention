@@ -1,9 +1,18 @@
-<md-sidenav md-component-id="sidenav" layout="column" flex>
+<md-sidenav md-component-id="sidenav" layout="column">
     <md-content flex layout="column">
-        <div>
-            <a ui-sref="home" ui-sref-active="active" class="md-subheader mf-text-no-decor">Professional Profile</a>
+        <div layout-padding layout="row" layout-align="center center">
+            <div>
+                <img ng-src="asset/img/avatar.png" height="25">
+            </div>
+            <div style="font-weight: 200;">
+                MICHAEL ARDAN
+            </div>
+        </div>
+        <md-divider></md-divider>
+        <div layout="column" flex layout-padding>
+            <mf-sidenav-anchor link="home" ng-click="toggleSidenav()">Professional Profile</mf-sidenav-anchor>
 
-            <a ui-sref="git-convention" ui-sref-active="active" class="md-subheader mf-text-no-decor">GIT Branching Model</a>
+            <mf-sidenav-anchor link=" git-convention " ng-click="toggleSidenav() ">GIT Branching Model</mf-sidenav-anchor>
         </div>
     </md-content>
 </md-sidenav>
